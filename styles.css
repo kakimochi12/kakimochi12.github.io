@@ -6,8 +6,8 @@
   --border:    #d1d5db;
   --text:      #111827;
   --text-muted:#6b7280;
-  --accent:    #7c3aed;
-  --accent-dim:#6d28d9;
+  --accent:    #d946ef;
+  --accent-dim:#c026d3;
   --blue:      #2563eb;
   --nav-h:     60px;
   --radius:    10px;
@@ -100,7 +100,7 @@ ul { list-style: none; }
   text-align: center;
   padding: calc(var(--nav-h) + 2rem) 1.5rem 4rem;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 58, 237, 0.1) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(217, 70, 239, 0.1) 0%, transparent 70%),
     var(--bg);
   position: relative;
 }
@@ -240,7 +240,7 @@ a.project-card {
 a.project-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.12);
+  box-shadow: 0 8px 24px rgba(192, 38, 211, 0.12);
 }
 
 /* non-clickable card (video) */
@@ -254,8 +254,8 @@ div.project-card {
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 div.project-card:hover {
-  border-color: #c4b5fd;
-  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.08);
+  border-color: #f0abfc;
+  box-shadow: 0 8px 24px rgba(192, 38, 211, 0.08);
 }
 
 .project-img-wrap {
@@ -304,9 +304,9 @@ a.project-card:hover .project-img { transform: scale(1.03); }
   text-transform: uppercase;
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(217, 70, 239, 0.08);
   color: var(--accent);
-  border: 1px solid rgba(124, 58, 237, 0.2);
+  border: 1px solid rgba(217, 70, 239, 0.2);
 }
 
 .project-date {
@@ -377,13 +377,13 @@ a.project-card:hover .project-link-label { gap: 0.65rem; }
 }
 
 .project-action-btn--primary {
-  background: rgba(124, 58, 237, 0.08);
-  border-color: rgba(124, 58, 237, 0.3);
+  background: rgba(217, 70, 239, 0.08);
+  border-color: rgba(217, 70, 239, 0.3);
   color: var(--accent);
 }
 
 .project-action-btn--primary:hover {
-  background: rgba(124, 58, 237, 0.15);
+  background: rgba(217, 70, 239, 0.15);
   border-color: var(--accent);
   color: var(--accent);
 }
@@ -447,8 +447,8 @@ a.project-card:hover .project-link-label { gap: 0.65rem; }
 }
 
 .resume-block--highlight {
-  border-color: rgba(124, 58, 237, 0.35);
-  background: rgba(124, 58, 237, 0.05);
+  border-color: rgba(217, 70, 239, 0.35);
+  background: rgba(217, 70, 239, 0.05);
 }
 
 .resume-block-head {
