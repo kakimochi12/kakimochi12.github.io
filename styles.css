@@ -1,11 +1,11 @@
 /* ─── DESIGN TOKENS ─────────────────────────────────────────── */
 :root {
-  --bg:        #ffffff;
-  --bg-2:      #f5f5f7;
-  --bg-3:      #ebebee;
-  --border:    #d1d5db;
-  --text:      #111827;
-  --text-muted:#6b7280;
+  --bg:        #0d1117;
+  --bg-2:      #161b22;
+  --bg-3:      #1c2128;
+  --border:    #30363d;
+  --text:      #e6edf3;
+  --text-muted:#8b949e;
   --accent:    #d946ef;
   --accent-dim:#c026d3;
   --blue:      #2563eb;
@@ -45,7 +45,7 @@ ul { list-style: none; }
   left: 0;
   right: 0;
   height: var(--nav-h);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(13, 17, 23, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -100,7 +100,7 @@ ul { list-style: none; }
   text-align: center;
   padding: calc(var(--nav-h) + 2rem) 1.5rem 4rem;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(217, 70, 239, 0.1) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(217, 70, 239, 0.18) 0%, transparent 70%),
     var(--bg);
   position: relative;
 }
@@ -240,7 +240,7 @@ a.project-card {
 a.project-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(192, 38, 211, 0.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 
 /* non-clickable card (video) */
@@ -254,8 +254,8 @@ div.project-card {
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 div.project-card:hover {
-  border-color: #f0abfc;
-  box-shadow: 0 8px 24px rgba(192, 38, 211, 0.08);
+  border-color: #e879f9;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
 .project-img-wrap {
@@ -271,6 +271,11 @@ div.project-card:hover {
   transition: transform 0.35s ease;
 }
 a.project-card:hover .project-img { transform: scale(1.03); }
+
+.project-img-wrap--contain .project-img {
+  object-fit: contain;
+  background: #000;
+}
 
 .project-video-wrap {
   aspect-ratio: 16/9;
@@ -304,9 +309,9 @@ a.project-card:hover .project-img { transform: scale(1.03); }
   text-transform: uppercase;
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
-  background: rgba(217, 70, 239, 0.08);
+  background: rgba(217, 70, 239, 0.15);
   color: var(--accent);
-  border: 1px solid rgba(217, 70, 239, 0.2);
+  border: 1px solid rgba(217, 70, 239, 0.25);
 }
 
 .project-date {
@@ -377,13 +382,13 @@ a.project-card:hover .project-link-label { gap: 0.65rem; }
 }
 
 .project-action-btn--primary {
-  background: rgba(217, 70, 239, 0.08);
-  border-color: rgba(217, 70, 239, 0.3);
+  background: rgba(217, 70, 239, 0.15);
+  border-color: rgba(217, 70, 239, 0.35);
   color: var(--accent);
 }
 
 .project-action-btn--primary:hover {
-  background: rgba(217, 70, 239, 0.15);
+  background: rgba(217, 70, 239, 0.25);
   border-color: var(--accent);
   color: var(--accent);
 }
@@ -447,8 +452,8 @@ a.project-card:hover .project-link-label { gap: 0.65rem; }
 }
 
 .resume-block--highlight {
-  border-color: rgba(217, 70, 239, 0.35);
-  background: rgba(217, 70, 239, 0.05);
+  border-color: rgba(217, 70, 239, 0.45);
+  background: rgba(217, 70, 239, 0.07);
 }
 
 .resume-block-head {
@@ -507,7 +512,7 @@ a.project-card:hover .project-link-label { gap: 0.65rem; }
   flex-direction: column;
   gap: 0.1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 .resume-block--highlight .resume-items li:last-child {
   border-bottom: none;
